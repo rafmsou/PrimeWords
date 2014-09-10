@@ -1,0 +1,21 @@
+Um número primo é definido se ele possuir exatamente dois divisores: o número um e ele próprio. 
+São exemplos de números primos: 2, 3, 5, 101, 367 e 523.
+ 
+Neste problema, você deve ler uma palavra composta somente por letras [a-zA-Z]. 
+Cada letra possui um valor específico, a vale 1, b vale 2 e assim por diante, até a letra z que vale 26. 
+Do mesmo modo A vale 27, B vale 28, até a letra Z que vale 52.
+ 
+Você precisa definir se cada palavra em um conjunto de palavras é prima ou não. 
+Para ela ser prima, a soma dos valores de suas letras deve ser um número primo.
+
+Método para identificar um número primo:
+
+Seguem-se os seguintes passos:
+1. Escrevem-se todos os números até 101 
+2. Cortam-se, com um traço, todos os múltiplos de 2; 
+3. A cada passo seguinte cortam-se todos os números múltiplos do seguinte menor número restante de p, que seja maior do que p. 
+4. É suficiente fazê-lo até p2 < 101.
+
+Embora todos os múltiplos de 2,3,5,7 < 1011/2 sejam cortados, resta-nos número 53, que é primo pois ficou sem ser cortado na tabela.
+
+Então os números primos até 101 são, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101.
